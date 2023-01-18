@@ -1,6 +1,6 @@
 
 #' Recode Status
-#'
+#' This function recodes the status variable to custom values.
 #' @param status_vector 
 #' @param correct 
 #' @param error 
@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-recode_status = function(status_vector, correct = 1, error = 0, timeout = NA){
+recode.status = function(status_vector, correct = 1, error = 0, timeout = NA){
   return_vector = c()
   
   for(i in c(1:length(status_vector))){
