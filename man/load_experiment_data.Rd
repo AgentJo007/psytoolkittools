@@ -4,12 +4,22 @@
 \alias{load_experiment_data}
 \title{Load Experiment Data}
 \usage{
-load_experiment_data(experiment_file_names, label_structure)
+load_experiment_data(
+  experiment_file_names,
+  label_structure,
+  merge_dataframe = NA
+)
 }
 \arguments{
 \item{experiment_file_names}{A vector of experiment filenames}
 
+\item{merge_dataframe}{The result of this function can be directly added to a existing dataframe (e.g. survey data).
+The default value is NA.}
+
 \item{label_structur}{A vector of labels that represents the structur of the saved experiment value}
+}
+\value{
+data.frame
 }
 \description{
 This functions loads experiment data from a Psytoolkit experiment

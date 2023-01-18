@@ -4,12 +4,14 @@
 #' structure of the experiment file have to be provided
 #' @param experiment_file_names A vector of experiment filenames 
 #' @param label_structur A vector of labels that represents the structur of the saved experiment value
+#' @param merge_dataframe The result of this function can be directly added to a existing dataframe (e.g. survey data).
+#' The default value is NA.
 #'
-#' @return
+#' @return data.frame
 #' @export
 #'
 #' @examples
-load_experiment_data = function(experiment_file_names,label_structure){
+load_experiment_data = function(experiment_file_names,label_structure, merge_dataframe = NA){
   
   d = data.frame()
   
@@ -20,7 +22,16 @@ load_experiment_data = function(experiment_file_names,label_structure){
   }
   
   d = setNames(d, label_structure)
-  return(d)
+  
+  
+  
+  ### add to existing dataframe?
+  if(is.na(merge_dataframe)){
+    return(d)
+  }
+  else{
+    return(cbind(merge_dataframe, d))
+  }
 
 }
 
