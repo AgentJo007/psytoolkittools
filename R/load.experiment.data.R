@@ -15,7 +15,7 @@ load.experiment.data = function(experiment.file.names,label.structure, merge.dat
   
   d = data.frame()
   
-  for(i in c(1:length(experiment.file_names))){
+  for(i in c(1:length(experiment.file.names))){
     data.list = .read.experiment.file(experiment.file.names[i])
     
     d = rbind(d, data.list)
