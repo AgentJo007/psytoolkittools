@@ -4,12 +4,16 @@
 \alias{recode.keys}
 \title{Recode Keys}
 \usage{
-recode.keys(keys, return_value = c("int", "string"))
+recode.keys(vector, keys)
 }
 \arguments{
-\item{keys}{}
+\item{vector}{A vector of key values}
 
-\item{return_value}{}
+\item{keys}{A vector of keys. Those keys have to be in the same order than
+in your experiment.}
+}
+\value{
+numeric
 }
 \description{
 Recode Keys

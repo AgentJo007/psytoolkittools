@@ -3,3 +3,5 @@
 export(load.experiment.data)
 export(recode.keys)
 export(recode.status)
+importFrom("stats","setNames")
+importFrom("utils","read.csv")

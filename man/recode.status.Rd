@@ -2,7 +2,8 @@
 % Please edit documentation in R/recode.status.R
 \name{recode.status}
 \alias{recode.status}
-\title{Recode Status}
+\title{Recode Status
+This function recodes the status variable to custom values.}
 \usage{
 recode.status(status_vector, correct = 1, error = 0, timeout = NA)
 }
@@ -20,4 +21,5 @@ numeric vector
 }
 \description{
 Recode Status
+This function recodes the status variable to custom values.
 }

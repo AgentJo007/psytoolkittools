@@ -9,7 +9,8 @@
 #'
 #' @return data.frame
 #' @export
-#'
+#' @importFrom "stats" "setNames"
+#' @importFrom "utils" "read.csv"
 #' @examples
 load.experiment.data = function(experiment.file.names,label.structure, merge.dataframe = NA){
   
