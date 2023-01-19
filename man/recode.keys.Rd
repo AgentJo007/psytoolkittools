@@ -12,6 +12,9 @@ recode.keys(vector, keys)
 \item{keys}{A vector of keys. Those keys have to be in the same order than
 in your experiment.}
 }
+\value{
+numeric
+}
 \description{
 Recode Keys
 }
