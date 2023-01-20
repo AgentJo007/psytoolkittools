@@ -22,7 +22,7 @@ The default value is NA.}
 data.frame
 }
 \description{
-This functions loads experiment data from a Psytoolkit experiment
+This function loads experiment data from a Psytoolkit experiment
 Therefore, a vector of filenames and a vector of labels which represents the
 structure of the experiment file have to be provided
 }
