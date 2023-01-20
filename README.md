@@ -11,7 +11,7 @@ devtools::install_github("AgentJo007/psytoolkittools")
 
 ### Load Experiment Data
 
-To load experiment data, use the function `load_experiment_data`. This will return a data frame with your data. This functions requires two arguments: a vector of file names that will be opened and read for experiment parsing, and a vector of labels that represent the structure of the values saved in your experiment files.
+To load experiment data, use the function `load_experiment_data`. This will return a data frame with your data. This function requires two arguments: a vector of file names that will be opened and read for experiment parsing, and a vector of labels that represent the structure of the values saved in your experiment files.
 
 *Dummy experiment file*:
 
