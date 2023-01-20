@@ -1,11 +1,5 @@
 # PSYTOOLKITTOOLS
 
-This package is meant for easily integrating Psytoolkit survey and experiment data into a single data frame.
-
-This package is currently under development and therefore not stable at all. The current version is 0.0.2.
-
-To install this package, devtools is required.
-
 ## Installation
 
 ```{r}
