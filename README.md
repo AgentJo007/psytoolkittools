@@ -4,7 +4,7 @@
 
 ```{r}
 library(devtools)
-devtools::install_github("AgentJo007/psytoolkittools")
+install_gitlab("yu72bix/psytoolkittools", host = "git.uni-jena.de")
 ```
 
 ## Current Functions
