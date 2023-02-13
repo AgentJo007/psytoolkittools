@@ -1,0 +1,12 @@
+Package: psytoolkittools
+Type: Package
+Title: psytoolkittools
+Version: 1.0.0
+Date: 2023-03-13
+Author: Jonas Engicht
+Maintainer: Jonas Engicht <jonas.engicht@uni-jena.de>
+Description: Tool for Psytoolkit experiments and surveys
+License: GPL (>= 2)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
