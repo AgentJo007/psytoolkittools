@@ -11,7 +11,7 @@ install_gitlab("yu72bix/psytoolkittools", host = "git.uni-jena.de")
 
 ### Load Experiment Data
 
-To load experiment data, use the function `load_experiment_data`. This will return a data frame with your data. This function requires two arguments: a vector of file names that will be opened and read for experiment parsing, and a vector of labels that represent the structure of the values saved in your experiment files.
+To load experiment data, use the function `load.experiment.data`. This will return a data frame with your data. This function requires two arguments: a vector of file names that will be opened and read for experiment parsing, and a vector of labels that represent the structure of the values saved in your experiment files.
 
 *Dummy experiment file*:
 
@@ -23,7 +23,18 @@ To load experiment data, use the function `load_experiment_data`. This will retu
 ```{r}
 filenames = c("dummy_ex.txt")
 labels = c("RT_instructions", "RT_choice", "status", "key")
-d = load_experiment_data(filenames)
+d = load.experiment.data(filenames, label.structure = labels)
+```
+
+### Recode Keys
+
+In Psytoolkit experiments, a status of 1 represents a correct and 2 an incorrect answer. 3 represents a time out.\
+With `recode.status`, status codes can be recoded to custom values.
+
+*Example:*
+
+```{r}
+recode.status(vector, correct = 1, error = 0, timeout = -99)
 ```
 
 # License
