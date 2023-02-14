@@ -9,4 +9,4 @@
 library(testthat)
 library(psytoolkittools)
 
-test_check("psytoolkittools")
+test_dir("tests/tests")

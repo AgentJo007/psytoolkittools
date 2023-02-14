@@ -47,7 +47,7 @@ load.experiment.data = function(experiment.file.names,label.structure, merge.dat
       
       e = experiment.data[row, entry]
       if(!is.na(e)){
-        data.vector = append(data.vector, e)
+        data.vector = append(data.vector, as.integer(e))
       }
     }
   }
