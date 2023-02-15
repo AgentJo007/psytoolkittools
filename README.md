@@ -4,7 +4,7 @@
 
 ```{r}
 library(devtools)
-install_gitlab("yu72bix/psytoolkittools", host = "git.uni-jena.de")
+install_github("AgentJo007/psytoolkittools")
 ```
 
 ## Current Functions
@@ -26,15 +26,38 @@ labels = c("RT_instructions", "RT_choice", "status", "key")
 d = load.experiment.data(filenames, label.structure = labels)
 ```
 
-### Recode Keys
+### Recode Status
 
-In Psytoolkit experiments, a status of 1 represents a correct and 2 an incorrect answer. 3 represents a time out.\
+In PsyToolkit experiments, a status of 1 represents a correct and 2 an incorrect answer. 3 represents a time out.\
 With `recode.status`, status codes can be recoded to custom values.
 
 *Example:*
 
 ```{r}
 recode.status(vector, correct = 1, error = 0, timeout = -99)
+```
+
+### Recode Keys
+
+With `recode.keys`, PsyToolkit key values can be recoded to the pressed key.
+
+*Example key definition in experiment:*
+
+    1 2 3 space
+
+Those values are represented in the experiment file as the following values:
+
+-   1 -\> 1
+
+-   2 -\> 2
+
+-   3 -\> 3
+
+-   space - \> 4
+
+```{r}
+vec = c(1,2,3,4,4, 2)
+recode.keys(vec, c("1", "2", "3", "space"))
 ```
 
 # License

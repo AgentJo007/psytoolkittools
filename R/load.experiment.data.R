@@ -1,10 +1,10 @@
 #' Load Experiment Data
 #' @description This function loads experiment data from a Psytoolkit experiment
-#' Therefore, a vector of filenames and a vector of labels which represents the
-#' structure of the experiment file have to be provided
-#' @param experiment.file.names A vector of experiment filenames 
-#' @param label.structur A vector of labels that represents the structur of the saved experiment value
-#' @param merge.dataframe The result of this function can be directly added to a existing dataframe (e.g. survey data).
+#' Therefore, a vector of file names and a vector of labels which represents the
+#' structure of the experiment file have to be provided.
+#' @param experiment.file.names A vector of experiment file names 
+#' @param label.structur A vector of labels that represents the structure of the saved experiment value
+#' @param merge.dataframe The result of this function can be directly added to a existing data frame (e.g. survey data).
 #' The default value is NA.
 #'
 #' @return data.frame
