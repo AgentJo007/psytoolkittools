@@ -8,3 +8,5 @@ dummy_ex.csv
 src/*.o
 src/*.so
 src/*.dll
+src/*.pdb
+.vscode/

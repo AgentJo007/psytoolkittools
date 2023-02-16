@@ -11,18 +11,18 @@ load.experiment.data(
 )
 }
 \arguments{
-\item{experiment.file.names}{A vector of experiment filenames}
+\item{experiment.file.names}{A vector of experiment file names}
 
-\item{merge.dataframe}{The result of this function can be directly added to a existing dataframe (e.g. survey data).
+\item{merge.dataframe}{The result of this function can be directly added to a existing data frame (e.g. survey data).
 The default value is NA.}
 
-\item{label.structur}{A vector of labels that represents the structur of the saved experiment value}
+\item{label.structur}{A vector of labels that represents the structure of the saved experiment value}
 }
 \value{
 data.frame
 }
 \description{
 This function loads experiment data from a Psytoolkit experiment
-Therefore, a vector of filenames and a vector of labels which represents the
-structure of the experiment file have to be provided
+Therefore, a vector of file names and a vector of labels which represents the
+structure of the experiment file have to be provided.
 }

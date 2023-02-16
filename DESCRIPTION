@@ -10,3 +10,5 @@ License: GPL (>= 2)
 RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
+LinkingTo: cpp11
+SystemRequirements: C++11
