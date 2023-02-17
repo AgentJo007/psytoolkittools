@@ -9,15 +9,9 @@
 #' @export
 #' @examples
 recode.keys = function(vector, keys){
-  
-  for(v in c(1:length(vector))){
-    for(i in c(1:length(keys))){
-      if(v == i){
-        vector[v] = keys[i]
-      }
-    }
-  }
-  
-  
-  return(vector)
+  v = as.character(vector)
+  k = as.character(keys)
+  result = psytoolkittools:::recode_keys_c(v, k)
+ 
+  return(result)
 }
