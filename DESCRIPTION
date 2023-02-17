@@ -10,5 +10,7 @@ License: GPL (>= 2)
 RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
+Imports:
+  cli, glue
 LinkingTo: cpp11
 SystemRequirements: C++11

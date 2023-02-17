@@ -5,8 +5,10 @@
 .Rbuildignore
 .DS_Store
 dummy_ex.csv
+surveyd.csv
 src/*.o
 src/*.so
 src/*.dll
 src/*.pdb
 .vscode/
+renv.lock
