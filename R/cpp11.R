@@ -3,3 +3,7 @@
 recode_keys_c <- function(vector, keys) {
   .Call(`_psytoolkittools_recode_keys_c`, vector, keys)
 }
+
+recode_status_c <- function(status_vector, correct, error, timeout) {
+  .Call(`_psytoolkittools_recode_status_c`, status_vector, correct, error, timeout)
+}
